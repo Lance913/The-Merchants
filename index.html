@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Merchants – Premium Pink Salt Suppliers | Lahore, Pakistan</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --teal:#1B5C50;
+  --teal-light:#236b5d;
+  --teal-dark:#133d35;
+  --gold:#C49A2A;
+  --gold-light:#d4ac3a;
+  --gold-pale:#f5e9c8;
+  --charcoal:#2c2c2c;
+  --gray:#6b6b6b;
+  --off-white:#faf8f5;
+  --marble-white:#f7f5f2;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',sans-serif;background:var(--off-white);color:var(--charcoal);overflow-x:hidden}
+
+/* MARBLE TEXTURE OVERLAY */
+.marble-bg{
+  background-color:#f7f5f2;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.015' numOctaves='4' seed='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeBlend in='SourceGraphic' mode='multiply' result='blend'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.18'/%3E%3C/svg%3E");
+}
+
+/* ── NAVIGATION ───────────────────────────────── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  background:rgba(247,245,242,0.95);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(196,154,42,0.2);
+  padding:0 4%;
+  display:flex;align-items:center;justify-content:space-between;
+  height:72px;
+  transition:box-shadow 0.3s;
+}
+nav.scrolled{box-shadow:0 4px 30px rgba(0,0,0,0.08)}
+.nav-logo{display:flex;align-items:center;gap:14px;text-decoration:none}
+.nav-logo-text{font-family:'Cinzel',serif;font-size:1.1rem;letter-spacing:0.15em;color:var(--teal);line-height:1.2}
+.nav-logo-sub{font-family:'Jost',sans-serif;font-size:0.55rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-top:2px}
+.nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}
+.nav-links a{font-family:'Jost',sans-serif;font-size:0.78rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--charcoal);text-decoration:none;transition:color 0.3s;position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1px;background:var(--gold);transition:width 0.3s}
+.nav-links a:hover{color:var(--teal)}
+.nav-links a:hover::after{width:100%}
+.nav-cta{background:var(--teal);color:#fff!important;padding:0.5rem 1.4rem;border-radius:2px;letter-spacing:0.15em!important}
+.nav-cta::after{display:none!important}
+.nav-cta:hover{background:var(--teal-light)!important;color:#fff!important}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{display:block;width:24px;height:1.5px;background:var(--charcoal);transition:all 0.3s}
+
+/* ── HERO ─────────────────────────────────────── */
+#hero{
+  min-height:100vh;
+  background:var(--teal-dark);
+  position:relative;overflow:hidden;
+  display:flex;align-items:center;
+  padding:120px 4% 80px;
+}
+.hero-marble{
+  position:absolute;inset:0;
+  background:linear-gradient(135deg,#133d35 0%,#1B5C50 40%,#133d35 100%);
+  opacity:1;
+}
+.hero-marble::before{
+  content:'';position:absolute;inset:0;
+  background-image:radial-gradient(ellipse 60% 80% at 70% 50%,rgba(196,154,42,0.08) 0%,transparent 60%),
+                   radial-gradient(ellipse 40% 60% at 20% 30%,rgba(255,255,255,0.03) 0%,transparent 50%);
+}
+.hero-grain{
+  position:absolute;inset:0;opacity:0.04;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size:200px;
+}
+.hero-content{position:relative;z-index:2;max-width:700px}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:10px;
+  border:1px solid rgba(196,154,42,0.4);
+  padding:0.4rem 1rem;border-radius:2px;
+  margin-bottom:2.5rem;
+  animation:fadeUp 0.8s 0.2s both;
+}
+.hero-badge span{font-family:'Jost',sans-serif;font-size:0.65rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold-light)}
+.hero-badge::before{content:'✦';color:var(--gold);font-size:0.6rem}
+.hero-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(3rem,6vw,5.5rem);
+  font-weight:300;color:#fff;
+  line-height:1.1;
+  margin-bottom:1.5rem;
+  animation:fadeUp 0.8s 0.35s both;
+}
+.hero-title strong{font-weight:600;font-style:italic;color:var(--gold-light)}
+.hero-tagline{
+  font-size:0.9rem;font-weight:300;letter-spacing:0.08em;
+  color:rgba(255,255,255,0.65);
+  line-height:1.8;max-width:480px;
+  margin-bottom:3rem;
+  animation:fadeUp 0.8s 0.5s both;
+}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap;animation:fadeUp 0.8s 0.65s both}
+.btn-primary{
+  background:var(--gold);color:var(--charcoal);
+  font-family:'Jost',sans-serif;font-size:0.75rem;font-weight:600;
+  letter-spacing:0.2em;text-transform:uppercase;
+  padding:1rem 2.2rem;text-decoration:none;
+  display:inline-flex;align-items:center;gap:10px;
+  transition:all 0.3s;border-radius:2px;
+}
+.btn-primary:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 30px rgba(196,154,42,0.3)}
+.btn-outline{
+  border:1px solid rgba(255,255,255,0.3);color:#fff;
+  font-family:'Jost',sans-serif;font-size:0.75rem;font-weight:400;
+  letter-spacing:0.2em;text-transform:uppercase;
+  padding:1rem 2.2rem;text-decoration:none;
+  display:inline-flex;align-items:center;gap:10px;
+  transition:all 0.3s;border-radius:2px;
+}
+.btn-outline:hover{border-color:rgba(255,255,255,0.7);background:rgba(255,255,255,0.05)}
+.hero-right{
+  position:absolute;right:4%;top:50%;transform:translateY(-50%);
+  z-index:2;text-align:center;
+  animation:fadeIn 1.2s 0.8s both;
+}
+.hero-logo-wrap{
+  width:260px;height:260px;
+  background:rgba(255,255,255,0.05);
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  border:1px solid rgba(196,154,42,0.2);
+  position:relative;
+}
+.hero-logo-wrap::before{
+  content:'';position:absolute;
+  inset:-10px;border-radius:50%;
+  border:1px solid rgba(196,154,42,0.08);
+}
+.hero-stats{
+  display:grid;grid-template-columns:1fr 1fr;gap:1px;
+  background:rgba(196,154,42,0.15);
+  margin-top:3rem;border:1px solid rgba(196,154,42,0.15);
+  animation:fadeUp 0.8s 0.8s both;
+}
+.hero-stat{background:rgba(255,255,255,0.03);padding:1.5rem 2rem;text-align:center}
+.hero-stat-num{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:600;color:var(--gold-light);line-height:1}
+.hero-stat-label{font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-top:4px}
+
+/* ── SECTIONS COMMON ─────────────────────────── */
+.section{padding:7rem 4%}
+.section-label{font-family:'Jost',sans-serif;font-size:0.65rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:0.8rem}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4vw,3.5rem);font-weight:300;color:var(--teal-dark);line-height:1.15;margin-bottom:1.5rem}
+.section-title em{font-style:italic;color:var(--gold)}
+.section-divider{width:60px;height:2px;background:linear-gradient(90deg,var(--gold),transparent);margin-bottom:2.5rem}
+
+/* ── ABOUT STRIP ─────────────────────────────── */
+#about-strip{background:var(--gold);padding:1.2rem 4%;display:flex;align-items:center;justify-content:center;gap:3rem;flex-wrap:wrap}
+.strip-item{display:flex;align-items:center;gap:0.7rem;color:var(--charcoal)}
+.strip-item svg{width:18px;height:18px;flex-shrink:0}
+.strip-item span{font-size:0.75rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase}
+
+/* ── ABOUT SECTION ───────────────────────────── */
+#about{background:var(--marble-white)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center}
+.about-image-wrap{position:relative}
+.about-image-card{
+  background:var(--teal);
+  border-radius:2px;
+  aspect-ratio:4/5;
+  display:flex;align-items:center;justify-content:center;
+  position:relative;overflow:hidden;
+}
+.about-image-card::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,var(--teal-dark),var(--teal),var(--teal-dark));
+}
+.about-image-card .salt-visual{position:relative;z-index:1;text-align:center;padding:2rem}
+.salt-pile-icon{font-size:5rem;margin-bottom:1rem;filter:drop-shadow(0 4px 20px rgba(196,154,42,0.3))}
+.about-card-badge{
+  position:absolute;bottom:-1.5rem;right:-1.5rem;
+  background:var(--gold);color:var(--charcoal);
+  padding:1.5rem;border-radius:2px;
+  text-align:center;box-shadow:0 8px 30px rgba(0,0,0,0.15);
+}
+.about-card-badge .num{font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:700;line-height:1}
+.about-card-badge .lbl{font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;margin-top:2px}
+.about-text p{font-size:0.95rem;line-height:1.9;color:var(--gray);margin-bottom:1.2rem}
+.about-text p strong{color:var(--charcoal);font-weight:500}
+.about-contact-card{
+  background:#fff;border:1px solid rgba(196,154,42,0.2);
+  padding:1.8rem;border-radius:2px;margin-top:2rem;
+  display:grid;grid-template-columns:1fr 1fr;gap:1rem;
+}
+.contact-detail{display:flex;flex-direction:column;gap:3px}
+.contact-detail .lbl{font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold)}
+.contact-detail .val{font-size:0.85rem;color:var(--charcoal);font-weight:400}
+
+/* ── PRODUCTS ────────────────────────────────── */
+#products{background:var(--off-white)}
+.products-intro{max-width:560px;margin-bottom:4rem}
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.product-card{
+  background:#fff;border:1px solid rgba(0,0,0,0.06);
+  border-radius:2px;overflow:hidden;
+  transition:all 0.4s cubic-bezier(0.23,1,0.32,1);
+  position:relative;
+}
+.product-card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(0,0,0,0.1);border-color:rgba(196,154,42,0.3)}
+.product-card-image{
+  height:200px;display:flex;align-items:center;justify-content:center;
+  position:relative;overflow:hidden;
+}
+.pc-lamp{background:linear-gradient(135deg,#f5e9d0,#e8d4a0,#d4a843)}
+.pc-edible{background:linear-gradient(135deg,#fce8e8,#f5c4c4,#e89090)}
+.pc-granule{background:linear-gradient(135deg,#fde8d8,#f5c4a0,#e8945a)}
+.pc-animal{background:linear-gradient(135deg,#e8f0e8,#c4d4c4,#8aad8a)}
+.pc-packing{background:linear-gradient(135deg,#e8e8f5,#c4c4e8,#8a8ace)}
+.pc-custom{background:linear-gradient(135deg,#f5e8f5,#e0c4e0,#c48aca)}
+.product-icon{font-size:4rem;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.15))}
+.product-card-body{padding:1.5rem}
+.product-card-label{font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem}
+.product-card-title{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;color:var(--teal-dark);margin-bottom:0.7rem}
+.product-card-desc{font-size:0.82rem;color:var(--gray);line-height:1.7}
+.product-card-tag{
+  display:inline-block;background:var(--gold-pale);
+  color:var(--teal-dark);font-size:0.6rem;font-weight:500;
+  letter-spacing:0.1em;text-transform:uppercase;
+  padding:0.25rem 0.7rem;border-radius:20px;margin:0.8rem 0.2rem 0 0;
+}
+
+/* ── PACKAGING ───────────────────────────────── */
+#packaging{
+  background:var(--teal-dark);
+  position:relative;overflow:hidden;
+}
+#packaging::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 80% 80% at 50% 50%,rgba(196,154,42,0.05) 0%,transparent 60%);
+}
+#packaging .section-title{color:#fff}
+#packaging .section-label{color:var(--gold-light)}
+.packing-intro{color:rgba(255,255,255,0.65);font-size:0.9rem;line-height:1.8;max-width:560px;margin-bottom:4rem;position:relative}
+.packing-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;position:relative}
+.packing-item{
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(196,154,42,0.15);
+  border-radius:2px;padding:2rem 1.5rem;text-align:center;
+  transition:all 0.3s;
+}
+.packing-item:hover{background:rgba(196,154,42,0.08);border-color:rgba(196,154,42,0.4);transform:translateY(-4px)}
+.packing-weight{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:700;color:var(--gold-light);line-height:1}
+.packing-unit{font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-top:3px}
+.packing-custom{
+  grid-column:span 4;
+  background:rgba(196,154,42,0.08);
+  border:1px dashed rgba(196,154,42,0.3);
+  border-radius:2px;padding:1.5rem;
+  text-align:center;color:rgba(255,255,255,0.6);
+  font-size:0.82rem;letter-spacing:0.05em;
+}
+.packing-custom strong{color:var(--gold-light)}
+
+/* ── SHIPPING ────────────────────────────────── */
+#shipping{background:#fff}
+.shipping-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.shipping-card{
+  border:1px solid rgba(196,154,42,0.2);border-radius:2px;padding:2.5rem;
+  position:relative;overflow:hidden;transition:all 0.3s;
+}
+.shipping-card:hover{border-color:var(--gold);box-shadow:0 8px 30px rgba(196,154,42,0.1)}
+.shipping-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--gold),var(--gold-light));
+}
+.shipping-card-num{font-family:'Cormorant Garamond',serif;font-size:3.5rem;font-weight:300;color:rgba(196,154,42,0.15);line-height:1;margin-bottom:1rem}
+.shipping-card-title{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:600;color:var(--teal-dark);margin-bottom:0.7rem}
+.shipping-card-abbr{display:inline-block;background:var(--gold-pale);color:var(--teal-dark);font-family:'Jost',sans-serif;font-size:0.65rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;padding:0.2rem 0.7rem;border-radius:20px;margin-bottom:1rem}
+.shipping-card-desc{font-size:0.85rem;line-height:1.8;color:var(--gray)}
+
+/* ── WHY US ──────────────────────────────────── */
+#whyus{background:var(--marble-white)}
+.whyus-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:3rem;align-items:start}
+.whyus-list{display:flex;flex-direction:column;gap:1.5rem;margin-top:2rem}
+.why-item{display:flex;gap:1.2rem;padding:1.5rem;background:#fff;border:1px solid rgba(0,0,0,0.05);border-radius:2px;transition:border-color 0.3s}
+.why-item:hover{border-color:rgba(196,154,42,0.3)}
+.why-icon{width:44px;height:44px;background:var(--gold-pale);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.2rem}
+.why-text h4{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;color:var(--teal-dark);margin-bottom:0.3rem}
+.why-text p{font-size:0.82rem;line-height:1.7;color:var(--gray)}
+.whyus-right{position:sticky;top:100px}
+.inquiry-note{
+  background:var(--teal-dark);color:#fff;
+  padding:2.5rem;border-radius:2px;margin-bottom:2rem;
+}
+.inquiry-note h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;margin-bottom:1rem;color:#fff}
+.inquiry-note p{font-size:0.85rem;line-height:1.8;color:rgba(255,255,255,0.65);margin-bottom:1.5rem}
+.wa-btn{
+  display:flex;align-items:center;gap:12px;
+  background:#25D366;color:#fff;
+  padding:1rem 1.5rem;border-radius:2px;
+  text-decoration:none;font-family:'Jost',sans-serif;
+  font-size:0.8rem;font-weight:500;letter-spacing:0.1em;
+  transition:all 0.3s;
+}
+.wa-btn:hover{background:#1ebe59;transform:translateY(-2px);box-shadow:0 8px 20px rgba(37,211,102,0.3)}
+.wa-btn svg{width:22px;height:22px;flex-shrink:0}
+
+/* ── CONTACT FORM ────────────────────────────── */
+#contact{background:var(--off-white)}
+.contact-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:5rem;align-items:start}
+.form-group{margin-bottom:1.5rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+label{display:block;font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gray);margin-bottom:0.5rem}
+input,select,textarea{
+  width:100%;background:#fff;border:1px solid rgba(0,0,0,0.1);
+  border-radius:2px;padding:0.8rem 1rem;
+  font-family:'Jost',sans-serif;font-size:0.88rem;color:var(--charcoal);
+  transition:border-color 0.3s,box-shadow 0.3s;outline:none;
+  -webkit-appearance:none;appearance:none;
+}
+input:focus,select:focus,textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(196,154,42,0.1)}
+textarea{resize:vertical;min-height:120px}
+select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b6b6b' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1rem center;background-size:12px;padding-right:2.5rem}
+.btn-submit{
+  background:var(--teal);color:#fff;border:none;cursor:pointer;
+  font-family:'Jost',sans-serif;font-size:0.75rem;font-weight:600;
+  letter-spacing:0.2em;text-transform:uppercase;
+  padding:1rem 2.5rem;border-radius:2px;
+  transition:all 0.3s;display:flex;align-items:center;gap:10px;width:100%;justify-content:center;
+}
+.btn-submit:hover{background:var(--teal-light);transform:translateY(-2px);box-shadow:0 8px 25px rgba(27,92,80,0.3)}
+.form-success{display:none;background:#e8f5e9;border:1px solid #a5d6a7;color:#2e7d32;padding:1rem 1.2rem;border-radius:2px;font-size:0.85rem;margin-top:1rem;text-align:center}
+.contact-info-card{background:var(--teal-dark);color:#fff;padding:2.5rem;border-radius:2px}
+.contact-info-card h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:#fff;margin-bottom:2rem}
+.cinfo-row{display:flex;gap:1rem;align-items:flex-start;margin-bottom:1.8rem;padding-bottom:1.8rem;border-bottom:1px solid rgba(255,255,255,0.08)}
+.cinfo-row:last-of-type{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.cinfo-icon{width:36px;height:36px;background:rgba(196,154,42,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:0.9rem}
+.cinfo-lbl{font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold-light);margin-bottom:3px}
+.cinfo-val{font-size:0.88rem;color:rgba(255,255,255,0.8);line-height:1.6}
+.cinfo-val a{color:rgba(255,255,255,0.8);text-decoration:none}
+.cinfo-val a:hover{color:var(--gold-light)}
+
+/* ── FOOTER ──────────────────────────────────── */
+footer{
+  background:var(--charcoal);color:rgba(255,255,255,0.5);
+  padding:3rem 4%;
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem;
+}
+.footer-logo-wrap{display:flex;align-items:center;gap:12px}
+.footer-brand{font-family:'Cinzel',serif;font-size:0.95rem;letter-spacing:0.15em;color:#fff}
+.footer-sub{font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-top:2px}
+.footer-copy{font-size:0.72rem;letter-spacing:0.05em}
+.footer-links{display:flex;gap:2rem;list-style:none}
+.footer-links a{font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.4);text-decoration:none;transition:color 0.3s}
+.footer-links a:hover{color:var(--gold)}
+
+/* ── WHATSAPP FLOAT ──────────────────────────── */
+.wa-float{
+  position:fixed;bottom:2rem;right:2rem;z-index:900;
+  width:58px;height:58px;
+  background:#25D366;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 20px rgba(37,211,102,0.4);
+  text-decoration:none;transition:all 0.3s;
+  animation:pulse 2.5s infinite;
+}
+.wa-float:hover{transform:scale(1.1);box-shadow:0 8px 30px rgba(37,211,102,0.5)}
+.wa-float svg{width:28px;height:28px}
+.wa-tooltip{
+  position:absolute;right:70px;background:var(--charcoal);
+  color:#fff;padding:0.4rem 0.9rem;border-radius:4px;
+  font-size:0.72rem;white-space:nowrap;pointer-events:none;
+  opacity:0;transition:opacity 0.3s;
+}
+.wa-float:hover .wa-tooltip{opacity:1}
+.wa-tooltip::after{content:'';position:absolute;right:-6px;top:50%;transform:translateY(-50%);border:6px solid transparent;border-right:none;border-left-color:var(--charcoal)}
+
+/* ── ADMIN TOGGLE ────────────────────────────── */
+.admin-fab{
+  position:fixed;bottom:2rem;left:2rem;z-index:900;
+  width:44px;height:44px;
+  background:rgba(27,92,80,0.8);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;border:none;
+  box-shadow:0 4px 15px rgba(0,0,0,0.2);
+  transition:all 0.3s;
+  backdrop-filter:blur(8px);
+}
+.admin-fab:hover{background:var(--teal);transform:scale(1.1)}
+.admin-fab svg{width:18px;height:18px;color:#fff;fill:currentColor}
+
+/* ── ADMIN PANEL ─────────────────────────────── */
+#admin-overlay{
+  position:fixed;inset:0;z-index:2000;
+  background:rgba(0,0,0,0.85);
+  backdrop-filter:blur(8px);
+  display:none;align-items:center;justify-content:center;
+}
+#admin-overlay.open{display:flex}
+.admin-panel{
+  background:var(--off-white);width:min(900px,95vw);max-height:90vh;
+  border-radius:4px;overflow:hidden;display:flex;flex-direction:column;
+  box-shadow:0 30px 80px rgba(0,0,0,0.5);
+}
+.admin-header{
+  background:var(--teal-dark);color:#fff;
+  padding:1.2rem 1.8rem;
+  display:flex;align-items:center;justify-content:space-between;
+  flex-shrink:0;
+}
+.admin-header h2{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:400;letter-spacing:0.05em}
+.admin-header-right{display:flex;align-items:center;gap:1rem}
+.admin-badge{background:var(--gold);color:var(--charcoal);font-size:0.7rem;font-weight:600;padding:0.2rem 0.8rem;border-radius:20px}
+.admin-close{background:none;border:none;color:rgba(255,255,255,0.7);cursor:pointer;font-size:1.4rem;line-height:1;transition:color 0.2s}
+.admin-close:hover{color:#fff}
+
+/* LOGIN SCREEN */
+#admin-login{padding:3rem;text-align:center}
+#admin-login h3{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:400;color:var(--teal-dark);margin-bottom:0.5rem}
+#admin-login p{font-size:0.82rem;color:var(--gray);margin-bottom:2rem}
+.login-form{max-width:300px;margin:0 auto}
+.login-input{width:100%;background:#fff;border:1px solid rgba(0,0,0,0.15);border-radius:2px;padding:0.8rem 1rem;font-family:'Jost',sans-serif;font-size:0.9rem;text-align:center;letter-spacing:0.2em;outline:none;margin-bottom:1rem;transition:border-color 0.3s}
+.login-input:focus{border-color:var(--gold)}
+.login-btn{background:var(--teal);color:#fff;border:none;cursor:pointer;font-family:'Jost',sans-serif;font-size:0.75rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;padding:0.8rem 2rem;border-radius:2px;width:100%;transition:background 0.3s}
+.login-btn:hover{background:var(--teal-light)}
+.login-error{color:#c62828;font-size:0.78rem;margin-top:0.5rem;display:none}
+
+/* DASHBOARD */
+#admin-dashboard{display:none;flex-direction:column;overflow:hidden;flex:1}
+.admin-tabs{display:flex;border-bottom:1px solid rgba(0,0,0,0.08);background:#fff;flex-shrink:0}
+.admin-tab{padding:1rem 1.5rem;font-family:'Jost',sans-serif;font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;border:none;background:none;color:var(--gray);border-bottom:2px solid transparent;transition:all 0.2s}
+.admin-tab.active{color:var(--teal);border-bottom-color:var(--teal)}
+.admin-content{overflow-y:auto;flex:1;padding:1.5rem}
+
+/* INQUIRY TABLE */
+.admin-toolbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.2rem}
+.admin-toolbar-left h3{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;color:var(--teal-dark)}
+.admin-toolbar-left p{font-size:0.75rem;color:var(--gray);margin-top:2px}
+.btn-clear{background:none;border:1px solid rgba(200,0,0,0.3);color:#c62828;font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;padding:0.4rem 1rem;border-radius:2px;cursor:pointer;transition:all 0.2s}
+.btn-clear:hover{background:#c62828;color:#fff}
+.inquiry-table{width:100%;border-collapse:collapse;font-size:0.82rem}
+.inquiry-table th{background:var(--teal-dark);color:rgba(255,255,255,0.8);padding:0.7rem 1rem;text-align:left;font-weight:500;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase}
+.inquiry-table td{padding:0.85rem 1rem;border-bottom:1px solid rgba(0,0,0,0.05);vertical-align:top;color:var(--charcoal)}
+.inquiry-table tr:hover td{background:rgba(196,154,42,0.04)}
+.inquiry-table tr.unread td{background:rgba(27,92,80,0.03)}
+.inquiry-table tr.unread td:first-child{border-left:3px solid var(--teal)}
+.badge-new{background:var(--teal);color:#fff;font-size:0.55rem;padding:0.1rem 0.5rem;border-radius:20px;letter-spacing:0.1em;text-transform:uppercase;vertical-align:middle;margin-left:5px}
+.badge-read{background:rgba(0,0,0,0.1);color:var(--gray);font-size:0.55rem;padding:0.1rem 0.5rem;border-radius:20px;letter-spacing:0.1em;text-transform:uppercase}
+.td-mark-btn{background:none;border:none;cursor:pointer;color:var(--teal);font-size:0.7rem;text-decoration:underline;padding:0}
+.empty-state{text-align:center;padding:4rem 2rem;color:var(--gray)}
+.empty-state svg{opacity:0.3;margin-bottom:1rem}
+.empty-state p{font-size:0.85rem}
+
+/* STATS TAB */
+.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.stat-card{background:#fff;border:1px solid rgba(0,0,0,0.06);border-radius:2px;padding:1.5rem}
+.stat-card-num{font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:600;color:var(--teal-dark);line-height:1}
+.stat-card-label{font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gray);margin-top:4px}
+
+/* ANIMATIONS */
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes pulse{0%,100%{box-shadow:0 4px 20px rgba(37,211,102,0.4)}50%{box-shadow:0 4px 30px rgba(37,211,102,0.7)}}
+.reveal{opacity:0;transform:translateY(40px);transition:opacity 0.9s cubic-bezier(0.23,1,0.32,1),transform 0.9s cubic-bezier(0.23,1,0.32,1)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-d1{transition-delay:0.1s}.reveal-d2{transition-delay:0.2s}.reveal-d3{transition-delay:0.3s}.reveal-d4{transition-delay:0.4s}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero-right{display:none}
+  .product-grid{grid-template-columns:1fr 1fr}
+  .packing-grid{grid-template-columns:repeat(4,1fr)}
+  .shipping-grid{grid-template-columns:1fr}
+  .about-grid,.contact-grid,.whyus-grid{grid-template-columns:1fr}
+  .about-card-badge{bottom:-1rem;right:1rem}
+  .stats-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .product-grid{grid-template-columns:1fr}
+  .packing-grid{grid-template-columns:repeat(2,1fr)}
+  .packing-custom{grid-column:span 2}
+  .form-row{grid-template-columns:1fr}
+  .hero-stats{grid-template-columns:1fr 1fr}
+  nav{padding:0 5%}
+  .section{padding:4rem 5%}
+  footer{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/923254055540" target="_blank" class="wa-float" title="Chat on WhatsApp">
+  <div class="wa-tooltip">Chat with us</div>
+  <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<!-- ADMIN FAB -->
+<button class="admin-fab" onclick="openAdmin()" title="Admin Panel">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+</button>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">
+    <svg width="38" height="38" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Shield -->
+      <path d="M60 8 L100 24 L100 70 Q100 95 60 112 Q20 95 20 70 L20 24 Z" fill="#1B5C50" stroke="#133d35" stroke-width="2"/>
+      <!-- Gray top arc -->
+      <path d="M35 28 Q60 16 85 28" stroke="#5a5a5a" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <!-- Gold chevrons -->
+      <path d="M38 42 L60 28 L82 42" stroke="#C49A2A" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M44 52 L60 40 L76 52" stroke="#C49A2A" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- M bars -->
+      <rect x="36" y="58" width="9" height="28" rx="1" fill="#1B5C50" stroke="#0d2e29" stroke-width="1"/>
+      <rect x="47" y="64" width="8" height="22" rx="1" fill="#4a4a4a"/>
+      <rect x="57" y="58" width="6" height="28" rx="1" fill="#C49A2A"/>
+      <rect x="65" y="64" width="8" height="22" rx="1" fill="#4a4a4a"/>
+      <rect x="75" y="58" width="9" height="28" rx="1" fill="#1B5C50" stroke="#0d2e29" stroke-width="1"/>
+      <!-- Globe -->
+      <circle cx="60" cy="50" r="9" fill="white" opacity="0.9"/>
+      <circle cx="60" cy="50" r="9" fill="none" stroke="#1B5C50" stroke-width="1.2"/>
+      <line x1="51" y1="50" x2="69" y2="50" stroke="#1B5C50" stroke-width="0.8"/>
+      <line x1="60" y1="41" x2="60" y2="59" stroke="#1B5C50" stroke-width="0.8"/>
+      <ellipse cx="60" cy="50" rx="5" ry="9" fill="none" stroke="#1B5C50" stroke-width="0.8"/>
+    </svg>
+    <div>
+      <div class="nav-logo-text">The Merchants</div>
+      <div class="nav-logo-sub">Pink Salt Suppliers</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#packaging">Packaging</a></li>
+    <li><a href="#shipping">Shipping</a></li>
+    <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-marble"></div>
+  <div class="hero-grain"></div>
+  <div class="hero-content">
+    <div class="hero-badge"><span>Pakistan's Premium Pink Salt Supplier</span></div>
+    <h1 class="hero-title">
+      Nature's Purest<br>
+      <strong>Pink Salt</strong><br>
+      — Delivered Globally
+    </h1>
+    <p class="hero-tagline">Sourced from the ancient Khewra Salt Mines of Pakistan. Supplying premium Himalayan pink salt products — from artisan lamps to food-grade granules — to importers worldwide.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Request a Quote →</a>
+      <a href="#products" class="btn-outline">View Products</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="hero-stat-num">100%</div><div class="hero-stat-label">Pure Himalayan Salt</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">Global</div><div class="hero-stat-label">Export Ready</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">FOB</div><div class="hero-stat-label">Karachi Port</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">Custom</div><div class="hero-stat-label">Packing Available</div></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-logo-wrap">
+      <svg width="200" height="200" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M60 8 L100 24 L100 70 Q100 95 60 112 Q20 95 20 70 L20 24 Z" fill="#1B5C50" stroke="#0d2e29" stroke-width="2"/>
+        <path d="M35 28 Q60 16 85 28" stroke="#5a5a5a" stroke-width="6" fill="none" stroke-linecap="round"/>
+        <path d="M38 42 L60 28 L82 42" stroke="#C49A2A" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M44 52 L60 40 L76 52" stroke="#C49A2A" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="36" y="58" width="9" height="28" rx="1" fill="#1B5C50" stroke="#0d2e29" stroke-width="1"/>
+        <rect x="47" y="64" width="8" height="22" rx="1" fill="#4a4a4a"/>
+        <rect x="57" y="58" width="6" height="28" rx="1" fill="#C49A2A"/>
+        <rect x="65" y="64" width="8" height="22" rx="1" fill="#4a4a4a"/>
+        <rect x="75" y="58" width="9" height="28" rx="1" fill="#1B5C50" stroke="#0d2e29" stroke-width="1"/>
+        <circle cx="60" cy="50" r="9" fill="white" opacity="0.95"/>
+        <circle cx="60" cy="50" r="9" fill="none" stroke="#1B5C50" stroke-width="1.2"/>
+        <line x1="51" y1="50" x2="69" y2="50" stroke="#1B5C50" stroke-width="0.8"/>
+        <line x1="60" y1="41" x2="60" y2="59" stroke="#1B5C50" stroke-width="0.8"/>
+        <ellipse cx="60" cy="50" rx="5" ry="9" fill="none" stroke="#1B5C50" stroke-width="0.8"/>
+        <!-- compass N/S/E/W -->
+        <text x="60" y="45" text-anchor="middle" font-size="3.5" fill="#1B5C50" font-family="serif">N</text>
+        <text x="60" y="57" text-anchor="middle" font-size="3.5" fill="#1B5C50" font-family="serif">S</text>
+        <text x="68" y="51.5" text-anchor="middle" font-size="3.5" fill="#1B5C50" font-family="serif">E</text>
+        <text x="52" y="51.5" text-anchor="middle" font-size="3.5" fill="#1B5C50" font-family="serif">W</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- STRIP -->
+<div id="about-strip">
+  <div class="strip-item">
+    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+    <span>Food Grade Certified</span>
+  </div>
+  <div class="strip-item">
+    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    <span>Quality Guaranteed</span>
+  </div>
+  <div class="strip-item">
+    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+    <span>Worldwide Export</span>
+  </div>
+  <div class="strip-item">
+    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><path d="M16 8h4l3 3v5h-7V8zM5.5 21a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM18.5 21a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/></svg>
+    <span>Flexible Shipping Terms</span>
+  </div>
+  <div class="strip-item">
+    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2zM16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+    <span>Custom Packaging</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="section marble-bg">
+  <div class="about-grid">
+    <div class="about-image-wrap reveal">
+      <div class="about-image-card">
+        <div class="salt-visual">
+          <div class="salt-pile-icon">🧂</div>
+          <p style="color:rgba(255,255,255,0.7);font-size:0.8rem;letter-spacing:0.15em;text-transform:uppercase">Himalayan Pink Salt</p>
+          <p style="color:rgba(255,255,255,0.4);font-size:0.72rem;margin-top:0.5rem">Khewra Salt Mines, Punjab, Pakistan</p>
+        </div>
+        <div class="about-card-badge">
+          <div class="num">84+</div>
+          <div class="lbl">Minerals</div>
+        </div>
+      </div>
+    </div>
+    <div class="about-text reveal reveal-d2">
+      <div class="section-label">About The Merchants</div>
+      <h2 class="section-title">A Rapidly Growing<br><em>Salt Supplier</em> from Lahore</h2>
+      <div class="section-divider"></div>
+      <p>We are <strong>The Merchants</strong>, a Lahore-based export company specializing in premium Himalayan Pink Salt products. Led by <strong>Rana Tlal</strong> (Manager Sales), we serve international buyers across Europe, North America, Asia, and the Middle East.</p>
+      <p>Our products are sourced directly from the world-famous <strong>Khewra Salt Mines</strong> — one of the largest and oldest salt mines in the world — ensuring unmatched purity, mineral richness, and authentic Himalayan quality.</p>
+      <p>We pride ourselves on competitive pricing, flexible packaging, reliable logistics, and a commitment to building <strong>long-term trade relationships</strong> with every client worldwide.</p>
+      <div class="about-contact-card">
+        <div class="contact-detail"><span class="lbl">Manager</span><span class="val">Rana Tlal</span></div>
+        <div class="contact-detail"><span class="lbl">Role</span><span class="val">Manager Sales</span></div>
+        <div class="contact-detail"><span class="lbl">WhatsApp</span><span class="val">+92 325 4055540</span></div>
+        <div class="contact-detail"><span class="lbl">Location</span><span class="val">Lahore, Pakistan</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="section">
+  <div class="products-intro reveal">
+    <div class="section-label">Our Product Range</div>
+    <h2 class="section-title">Premium Pink Salt<br><em>Products</em></h2>
+    <div class="section-divider"></div>
+    <p style="color:var(--gray);font-size:0.9rem;line-height:1.8">From decorative salt lamps to food-grade granules and animal licking salt — we supply a comprehensive range of authentic Himalayan pink salt products for importers and distributors worldwide.</p>
+  </div>
+  <div class="product-grid">
+    <div class="product-card reveal">
+      <div class="product-card-image pc-lamp"><div class="product-icon">🪔</div></div>
+      <div class="product-card-body">
+        <div class="product-card-label">Decorative</div>
+        <div class="product-card-title">Salt Lamps</div>
+        <p class="product-card-desc">Assorted sizes and designs. Available with or without electric cable. Natural crystal formations handcrafted for ambient lighting and air purification.</p>
+        <span class="product-card-tag">Assorted Sizes</span>
+        <span class="product-card-tag">With/Without Cable</span>
+        <span class="product-card-tag">Custom Designs</span>
+      </div>
+    </div>
+    <div class="product-card reveal reveal-d1">
+      <div class="product-card-image pc-edible"><div class="product-icon">🍽️</div></div>
+      <div class="product-card-body">
+        <div class="product-card-label">Food Grade</div>
+        <div class="product-card-title">Edible Pink Salt Powder</div>
+        <p class="product-card-desc">Finely milled Himalayan pink salt powder, food-grade quality. Rich in 84+ natural minerals. Ideal for culinary use, retail packaging, and food industry supply.</p>
+        <span class="product-card-tag">Food Grade</span>
+        <span class="product-card-tag">Fine Powder</span>
+        <span class="product-card-tag">Retail Ready</span>
+      </div>
+    </div>
+    <div class="product-card reveal reveal-d2">
+      <div class="product-card-image pc-granule"><div class="product-icon">🌿</div></div>
+      <div class="product-card-body">
+        <div class="product-card-label">Food Grade</div>
+        <div class="product-card-title">Edible Salt Granules</div>
+        <p class="product-card-desc">Available in precise granule sizes: <strong>0.2mm, 0.3mm, 0.5mm</strong>. Perfect for grinders, specialty food brands, spice companies, and health-food retailers.</p>
+        <span class="product-card-tag">0.2mm</span>
+        <span class="product-card-tag">0.3mm</span>
+        <span class="product-card-tag">0.5mm</span>
+        <span class="product-card-tag">Custom Size</span>
+      </div>
+    </div>
+    <div class="product-card reveal reveal-d1">
+      <div class="product-card-image pc-animal"><div class="product-icon">🐄</div></div>
+      <div class="product-card-body">
+        <div class="product-card-label">Animal Nutrition</div>
+        <div class="product-card-title">Animal Licking Salt</div>
+        <p class="product-card-desc">Himalayan salt licks for livestock and horses in multiple sizes. Essential mineral supplement for cattle, goats, horses, and other animals to boost health and productivity.</p>
+        <span class="product-card-tag">Multiple Sizes</span>
+        <span class="product-card-tag">Livestock</span>
+        <span class="product-card-tag">Horses</span>
+      </div>
+    </div>
+    <div class="product-card reveal reveal-d2">
+      <div class="product-card-image pc-packing"><div class="product-icon">📦</div></div>
+      <div class="product-card-body">
+        <div class="product-card-label">Packaging</div>
+        <div class="product-card-title">Standard Pack Sizes</div>
+        <p class="product-card-desc">Available in 100g, 250g, 500g, 800g, 1kg, 2.5kg, and 5kg. Retail-ready packaging with your label or our standard branding for quick market entry.</p>
+        <span class="product-card-tag">100g – 5kg</span>
+        <span class="product-card-tag">Retail Ready</span>
+        <span class="product-card-tag">Label Options</span>
+      </div>
+    </div>
+    <div class="product-card reveal reveal-d3">
+      <div class="product-card-image pc-custom"><div class="product-icon">✨</div></div>
+      <div class="product-card-body">
+        <div class="product-card-label">OEM / Private Label</div>
+        <div class="product-card-title">Custom Packaging</div>
+        <p class="product-card-desc">Fully customized packaging solutions — your brand, your design, your size. We offer private label and OEM manufacturing for established brands and new market entrants.</p>
+        <span class="product-card-tag">Private Label</span>
+        <span class="product-card-tag">Any Quantity</span>
+        <span class="product-card-tag">Your Branding</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGING -->
+<section id="packaging" class="section">
+  <div class="packing-intro reveal">
+    <div class="section-label">Available Packing</div>
+    <h2 class="section-title" style="color:#fff">Flexible Packing<br><em style="color:var(--gold-light)">Styles & Weights</em></h2>
+    <div class="section-divider"></div>
+    <p>We offer a full range of packing weights to suit every market — from single-serve retail to bulk institutional supply. Custom sizes available upon request.</p>
+  </div>
+  <div class="packing-grid">
+    <div class="packing-item reveal"><div class="packing-weight">100</div><div class="packing-unit">Grams</div></div>
+    <div class="packing-item reveal reveal-d1"><div class="packing-weight">250</div><div class="packing-unit">Grams</div></div>
+    <div class="packing-item reveal reveal-d2"><div class="packing-weight">500</div><div class="packing-unit">Grams</div></div>
+    <div class="packing-item reveal reveal-d3"><div class="packing-weight">800</div><div class="packing-unit">Grams</div></div>
+    <div class="packing-item reveal"><div class="packing-weight">1</div><div class="packing-unit">Kilogram</div></div>
+    <div class="packing-item reveal reveal-d1"><div class="packing-weight">2.5</div><div class="packing-unit">Kilograms</div></div>
+    <div class="packing-item reveal reveal-d2"><div class="packing-weight">5</div><div class="packing-unit">Kilograms</div></div>
+    <div class="packing-item reveal reveal-d3"><div class="packing-weight">Bulk</div><div class="packing-unit">Jumbo / Container</div></div>
+    <div class="packing-custom reveal">⭐ <strong>Customized Packing Available</strong> — We accommodate any size or format. Contact us with your specific requirements.</div>
+  </div>
+</section>
+
+<!-- SHIPPING -->
+<section id="shipping" class="section" style="background:var(--marble-white)">
+  <div class="reveal">
+    <div class="section-label">Shipping Terms</div>
+    <h2 class="section-title">Export &amp; Shipping<br><em>Terms Available</em></h2>
+    <div class="section-divider"></div>
+    <p style="color:var(--gray);font-size:0.9rem;line-height:1.8;max-width:560px;margin-bottom:3.5rem">We offer flexible shipping and trade terms to suit buyers globally. Please confirm your preferred term, port of delivery, and required quantity when requesting a quote.</p>
+  </div>
+  <div class="shipping-grid">
+    <div class="shipping-card reveal">
+      <div class="shipping-card-num">01</div>
+      <div class="shipping-card-abbr">EXW</div>
+      <div class="shipping-card-title">Ex-Works</div>
+      <p class="shipping-card-desc">Goods are made available at our facility in Lahore. The buyer is responsible for all transportation, insurance, and customs from our door to their destination. Ideal for buyers with established freight networks.</p>
+    </div>
+    <div class="shipping-card reveal reveal-d1">
+      <div class="shipping-card-num">02</div>
+      <div class="shipping-card-abbr">FOB</div>
+      <div class="shipping-card-title">FOB Karachi</div>
+      <p class="shipping-card-desc">We deliver goods loaded aboard the vessel at Karachi Port. All export customs, inland transport to port, and loading are our responsibility. This is our most popular term for international buyers.</p>
+    </div>
+    <div class="shipping-card reveal reveal-d2">
+      <div class="shipping-card-num">03</div>
+      <div class="shipping-card-abbr">C&F</div>
+      <div class="shipping-card-title">Cost &amp; Freight</div>
+      <p class="shipping-card-desc">We cover cost of goods plus freight charges to the destination port. The buyer handles insurance and import duties. We quote C&F to your nearest port for complete clarity on total landed costs.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="whyus" class="section">
+  <div class="whyus-grid">
+    <div>
+      <div class="section-label reveal">Why Choose Us</div>
+      <h2 class="section-title reveal">Our Commitment<br>to <em>Excellence</em></h2>
+      <div class="section-divider reveal"></div>
+      <div class="whyus-list">
+        <div class="why-item reveal">
+          <div class="why-icon">🏔️</div>
+          <div class="why-text"><h4>Authentic Source</h4><p>Our salt is sourced directly from the ancient Khewra Salt Mines — the purest and most mineral-rich Himalayan salt deposits on earth.</p></div>
+        </div>
+        <div class="why-item reveal reveal-d1">
+          <div class="why-icon">✅</div>
+          <div class="why-text"><h4>Quality Assured</h4><p>Every batch undergoes strict quality checks. Samples of any commodity available upon request before placing bulk orders.</p></div>
+        </div>
+        <div class="why-item reveal reveal-d2">
+          <div class="why-icon">🚢</div>
+          <div class="why-text"><h4>Reliable Export</h4><p>Experienced in global export logistics from Karachi Port with documentation, customs clearance, and timely delivery.</p></div>
+        </div>
+        <div class="why-item reveal reveal-d3">
+          <div class="why-icon">🤝</div>
+          <div class="why-text"><h4>Partnership First</h4><p>We are dedicated to building lasting business relationships. We assure our clients of the best cooperation at all times.</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="whyus-right reveal reveal-d2">
+      <div class="inquiry-note">
+        <h3>Ready to Start a Trade?</h3>
+        <p>Please confirm your required commodity, quantity, packing style, shipping term, and port of delivery — and we will quote promptly and competitively.</p>
+        <a href="https://wa.me/923254055540?text=Hello%20The%20Merchants!%20I%20am%20interested%20in%20your%20Pink%20Salt%20products.%20Please%20share%20more%20details." target="_blank" class="wa-btn">
+          <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp: +92 325 4055540
+        </a>
+      </div>
+      <div style="background:#fff;border:1px solid rgba(196,154,42,0.2);padding:2rem;border-radius:2px">
+        <div class="section-label" style="margin-bottom:1rem">Trade Information</div>
+        <div style="display:flex;flex-direction:column;gap:0.8rem">
+          <div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:0.8rem;border-bottom:1px solid rgba(0,0,0,0.05)">
+            <span style="font-size:0.8rem;color:var(--gray)">Product Origin</span>
+            <span style="font-size:0.82rem;font-weight:500;color:var(--charcoal)">Lahore, Pakistan</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:0.8rem;border-bottom:1px solid rgba(0,0,0,0.05)">
+            <span style="font-size:0.8rem;color:var(--gray)">Export Port</span>
+            <span style="font-size:0.82rem;font-weight:500;color:var(--charcoal)">Karachi, Pakistan</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:0.8rem;border-bottom:1px solid rgba(0,0,0,0.05)">
+            <span style="font-size:0.8rem;color:var(--gray)">Samples</span>
+            <span style="font-size:0.82rem;font-weight:500;color:var(--teal)">Available on Request</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <span style="font-size:0.8rem;color:var(--gray)">Payment Terms</span>
+            <span style="font-size:0.82rem;font-weight:500;color:var(--charcoal)">T/T, LC, negotiable</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section" style="background:#fff">
+  <div class="contact-grid">
+    <div>
+      <div class="section-label reveal">Contact & Inquiries</div>
+      <h2 class="section-title reveal">Get a Quote<br><em>Today</em></h2>
+      <div class="section-divider reveal"></div>
+      <p style="color:var(--gray);font-size:0.88rem;line-height:1.8;margin-bottom:2rem" class="reveal">Fill in the form below with your product requirements. We will respond with a competitive quotation promptly.</p>
+
+      <form id="inquiryForm" class="reveal">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Full Name *</label>
+            <input type="text" id="f_name" placeholder="John Smith" required>
+          </div>
+          <div class="form-group">
+            <label>Company Name</label>
+            <input type="text" id="f_company" placeholder="Your Company Ltd.">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" id="f_email" placeholder="john@company.com" required>
+          </div>
+          <div class="form-group">
+            <label>WhatsApp / Phone</label>
+            <input type="tel" id="f_phone" placeholder="+1 234 567 8900">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Country / Port of Delivery</label>
+            <input type="text" id="f_country" placeholder="e.g. Germany – Hamburg">
+          </div>
+          <div class="form-group">
+            <label>Preferred Shipping Term</label>
+            <select id="f_shipping">
+              <option value="">Select term...</option>
+              <option>Ex-Works (EXW)</option>
+              <option>FOB – Karachi</option>
+              <option>Cost & Freight (C&F)</option>
+              <option>To be discussed</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Product(s) Required *</label>
+          <select id="f_product" required>
+            <option value="">Select product...</option>
+            <option>Salt Lamps (assorted sizes / designs)</option>
+            <option>Edible Pink Salt Powder</option>
+            <option>Edible Salt Granules – 0.2mm</option>
+            <option>Edible Salt Granules – 0.3mm</option>
+            <option>Edible Salt Granules – 0.5mm</option>
+            <option>Animal Licking Salt</option>
+            <option>Multiple Products</option>
+            <option>Other / Custom</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Quantity (KG or Units)</label>
+            <input type="text" id="f_qty" placeholder="e.g. 5,000 kg or 1,000 pcs">
+          </div>
+          <div class="form-group">
+            <label>Packing Style</label>
+            <select id="f_packing">
+              <option value="">Select packing...</option>
+              <option>100g</option>
+              <option>250g</option>
+              <option>500g</option>
+              <option>800g</option>
+              <option>1kg</option>
+              <option>2.5kg</option>
+              <option>5kg</option>
+              <option>Bulk / Custom</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Additional Message</label>
+          <textarea id="f_message" placeholder="Any specific requirements, special designs, certifications needed, or other details..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          Send Inquiry
+        </button>
+        <div class="form-success" id="formSuccess">
+          ✅ Thank you! Your inquiry has been received. We will respond within 24 hours. You may also reach us directly on WhatsApp: +92 325 4055540
+        </div>
+      </form>
+    </div>
+
+    <div class="reveal reveal-d2">
+      <div class="contact-info-card">
+        <h3>Contact Information</h3>
+        <div class="cinfo-row">
+          <div class="cinfo-icon">👤</div>
+          <div><div class="cinfo-lbl">Contact Person</div><div class="cinfo-val">Rana Tlal<br>Manager Sales</div></div>
+        </div>
+        <div class="cinfo-row">
+          <div class="cinfo-icon">📱</div>
+          <div><div class="cinfo-lbl">Cell &amp; WhatsApp</div><div class="cinfo-val"><a href="https://wa.me/923254055540">+92 325 4055540</a></div></div>
+        </div>
+        <div class="cinfo-row">
+          <div class="cinfo-icon">📍</div>
+          <div><div class="cinfo-lbl">Office Address</div><div class="cinfo-val">305, 3rd Floor, Eagle Heights<br>47 Mozang Road<br>Lahore, Pakistan</div></div>
+        </div>
+        <div class="cinfo-row">
+          <div class="cinfo-icon">🕐</div>
+          <div><div class="cinfo-lbl">Business Hours</div><div class="cinfo-val">Monday – Saturday<br>9:00 AM – 6:00 PM (PKT)</div></div>
+        </div>
+        <div style="margin-top:1.5rem">
+          <a href="https://wa.me/923254055540?text=Hello%20The%20Merchants!%20I%20want%20to%20inquire%20about%20your%20Pink%20Salt%20products." target="_blank" class="wa-btn" style="justify-content:center">
+            <svg viewBox="0 0 24 24" fill="white" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Chat on WhatsApp Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo-wrap">
+    <svg width="30" height="30" viewBox="0 0 120 120" fill="none">
+      <path d="M60 8 L100 24 L100 70 Q100 95 60 112 Q20 95 20 70 L20 24 Z" fill="#1B5C50"/>
+      <path d="M38 42 L60 28 L82 42" stroke="#C49A2A" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="47" y="64" width="8" height="22" rx="1" fill="#4a4a4a"/>
+      <rect x="57" y="58" width="6" height="28" rx="1" fill="#C49A2A"/>
+      <rect x="65" y="64" width="8" height="22" rx="1" fill="#4a4a4a"/>
+    </svg>
+    <div><div class="footer-brand">The Merchants</div><div class="footer-sub">Pink Salt Suppliers – Lahore, Pakistan</div></div>
+  </div>
+  <div class="footer-copy">© 2024 The Merchants. All rights reserved. · 305, Eagle Heights, 47 Mozang Road, Lahore.</div>
+  <ul class="footer-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="https://wa.me/923254055540" target="_blank">WhatsApp</a></li>
+  </ul>
+</footer>
+
+<!-- ══════════════════ ADMIN OVERLAY ══════════════════ -->
+<div id="admin-overlay">
+  <div class="admin-panel">
+    <div class="admin-header">
+      <h2>⚙️ The Merchants — Admin Panel</h2>
+      <div class="admin-header-right">
+        <span class="admin-badge" id="unreadBadge">0 New</span>
+        <button class="admin-close" onclick="closeAdmin()">✕</button>
+      </div>
+    </div>
+
+    <!-- LOGIN -->
+    <div id="admin-login">
+      <h3>Admin Access</h3>
+      <p>Enter password to access the admin dashboard.</p>
+      <div class="login-form">
+        <input type="password" class="login-input" id="adminPass" placeholder="Password" onkeydown="if(event.key==='Enter')checkLogin()">
+        <button class="login-btn" onclick="checkLogin()">Login →</button>
+        <div class="login-error" id="loginError">Incorrect password. Please try again.</div>
+      </div>
+    </div>
+
+    <!-- DASHBOARD -->
+    <div id="admin-dashboard">
+      <div class="admin-tabs">
+        <button class="admin-tab active" onclick="showTab('inquiries',this)">📋 Inquiries</button>
+        <button class="admin-tab" onclick="showTab('stats',this)">📊 Statistics</button>
+        <button class="admin-tab" onclick="showTab('info',this)">ℹ️ Business Info</button>
+      </div>
+
+      <!-- INQUIRIES TAB -->
+      <div id="tab-inquiries" class="admin-content">
+        <div class="admin-toolbar">
+          <div class="admin-toolbar-left">
+            <h3>Customer Inquiries</h3>
+            <p id="inquiryCount">Loading...</p>
+          </div>
+          <button class="btn-clear" onclick="clearInquiries()">🗑 Clear All</button>
+        </div>
+        <div id="inquiryTableWrap"></div>
+      </div>
+
+      <!-- STATS TAB -->
+      <div id="tab-stats" class="admin-content" style="display:none">
+        <div class="stats-grid" id="statsGrid"></div>
+      </div>
+
+      <!-- INFO TAB -->
+      <div id="tab-info" class="admin-content" style="display:none">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem">
+          <div style="background:#fff;border:1px solid rgba(0,0,0,0.06);border-radius:2px;padding:1.5rem">
+            <div style="font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem">Company Information</div>
+            <div style="display:flex;flex-direction:column;gap:0.6rem;font-size:0.84rem">
+              <div><strong>Company:</strong> The Merchants</div>
+              <div><strong>Manager:</strong> Rana Tlal</div>
+              <div><strong>Role:</strong> Manager Sales</div>
+              <div><strong>WhatsApp:</strong> +92 325 4055540</div>
+              <div><strong>Address:</strong> 305, 3rd Floor, Eagle Heights, 47 Mozang Road, Lahore, Pakistan</div>
+            </div>
+          </div>
+          <div style="background:#fff;border:1px solid rgba(0,0,0,0.06);border-radius:2px;padding:1.5rem">
+            <div style="font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem">Products Overview</div>
+            <div style="display:flex;flex-direction:column;gap:0.4rem;font-size:0.82rem;color:var(--gray)">
+              <div>🪔 Salt Lamps (assorted sizes / designs)</div>
+              <div>🍽️ Edible Pink Salt Powder</div>
+              <div>🌿 Granules – 0.2mm, 0.3mm, 0.5mm</div>
+              <div>🐄 Animal Licking Salt (multiple sizes)</div>
+              <div>📦 Packing: 100g to 5kg + Bulk</div>
+              <div>🚢 EXW / FOB Karachi / C&F</div>
+            </div>
+          </div>
+        </div>
+        <div style="background:var(--gold-pale);border:1px solid rgba(196,154,42,0.3);border-radius:2px;padding:1.2rem;margin-top:1.5rem;font-size:0.82rem;color:var(--teal-dark)">
+          <strong>Admin Password:</strong> merchants2024 &nbsp;|&nbsp; Keep this confidential.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── SCROLL NAV ──────────────────────────────────────
+window.addEventListener('scroll',()=>{
+  document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>50);
+});
+
+// ── SCROLL REVEAL ───────────────────────────────────
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});
+},{threshold:0.12});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// ── MOBILE MENU ─────────────────────────────────────
+function toggleMenu(){
+  const nl=document.querySelector('.nav-links');
+  const isOpen=nl.style.display==='flex';
+  nl.style.cssText=isOpen?'':`display:flex;flex-direction:column;position:fixed;top:72px;left:0;right:0;background:rgba(247,245,242,0.98);padding:2rem;gap:1.5rem;box-shadow:0 10px 30px rgba(0,0,0,0.1);backdrop-filter:blur(12px);z-index:999`;
+}
+
+// ── INQUIRY FORM ─────────────────────────────────────
+document.getElementById('inquiryForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const inquiry={
+    id:Date.now(),
+    timestamp:new Date().toLocaleString('en-PK',{timeZone:'Asia/Karachi'}),
+    name:document.getElementById('f_name').value,
+    company:document.getElementById('f_company').value,
+    email:document.getElementById('f_email').value,
+    phone:document.getElementById('f_phone').value,
+    country:document.getElementById('f_country').value,
+    shipping:document.getElementById('f_shipping').value,
+    product:document.getElementById('f_product').value,
+    qty:document.getElementById('f_qty').value,
+    packing:document.getElementById('f_packing').value,
+    message:document.getElementById('f_message').value,
+    read:false
+  };
+  const all=JSON.parse(localStorage.getItem('tm_inquiries')||'[]');
+  all.unshift(inquiry);
+  localStorage.setItem('tm_inquiries',JSON.stringify(all));
+  document.getElementById('formSuccess').style.display='block';
+  this.reset();
+  setTimeout(()=>document.getElementById('formSuccess').style.display='none',8000);
+});
+
+// ── ADMIN ────────────────────────────────────────────
+const PASS='merchants2024';
+let loggedIn=false;
+
+function openAdmin(){
+  document.getElementById('admin-overlay').classList.add('open');
+  if(loggedIn){showDashboard();}
+  document.body.style.overflow='hidden';
+}
+function closeAdmin(){
+  document.getElementById('admin-overlay').classList.remove('open');
+  document.body.style.overflow='';
+}
+document.getElementById('admin-overlay').addEventListener('click',function(e){if(e.target===this)closeAdmin();});
+
+function checkLogin(){
+  const pw=document.getElementById('adminPass').value;
+  if(pw===PASS){
+    loggedIn=true;
+    document.getElementById('admin-login').style.display='none';
+    showDashboard();
+  }else{
+    document.getElementById('loginError').style.display='block';
+    document.getElementById('adminPass').value='';
+    setTimeout(()=>document.getElementById('loginError').style.display='none',3000);
+  }
+}
+
+function showDashboard(){
+  document.getElementById('admin-dashboard').style.display='flex';
+  renderInquiries();
+  renderStats();
+}
+
+function showTab(tab,btn){
+  document.querySelectorAll('.admin-tab').forEach(t=>t.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('tab-inquiries').style.display=tab==='inquiries'?'block':'none';
+  document.getElementById('tab-stats').style.display=tab==='stats'?'block':'none';
+  document.getElementById('tab-info').style.display=tab==='info'?'block':'none';
+}
+
+function getInquiries(){return JSON.parse(localStorage.getItem('tm_inquiries')||'[]');}
+function saveInquiries(arr){localStorage.setItem('tm_inquiries',JSON.stringify(arr));}
+
+function markRead(id){
+  const all=getInquiries().map(i=>(i.id===id?{...i,read:true}:i));
+  saveInquiries(all);renderInquiries();renderStats();
+}
+
+function clearInquiries(){
+  if(confirm('Delete all inquiries? This cannot be undone.')){
+    localStorage.removeItem('tm_inquiries');
+    renderInquiries();renderStats();
+  }
+}
+
+function renderInquiries(){
+  const all=getInquiries();
+  const unread=all.filter(i=>!i.read).length;
+  document.getElementById('unreadBadge').textContent=unread+' New';
+  document.getElementById('inquiryCount').textContent=`${all.length} total inquiries · ${unread} unread`;
+  const wrap=document.getElementById('inquiryTableWrap');
+  if(!all.length){
+    wrap.innerHTML=`<div class="empty-state"><svg width="48" height="48" fill="none" stroke="#ccc" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg><p>No inquiries yet. When customers submit the contact form, they will appear here.</p></div>`;
+    return;
+  }
+  wrap.innerHTML=`<table class="inquiry-table"><thead><tr><th>Date / Time</th><th>Name</th><th>Email / Phone</th><th>Product</th><th>Qty / Packing</th><th>Country</th><th>Status</th></tr></thead><tbody>${all.map(i=>`
+    <tr class="${i.read?'':'unread'}">
+      <td style="font-size:0.75rem;color:var(--gray)">${i.timestamp}</td>
+      <td><strong>${escHtml(i.name)}</strong>${i.company?`<br><small style="color:var(--gray)">${escHtml(i.company)}</small>`:''}</td>
+      <td style="font-size:0.8rem">${escHtml(i.email)}<br>${i.phone?`<a href="https://wa.me/${i.phone.replace(/\D/g,'')}" target="_blank" style="color:var(--teal);font-size:0.75rem">📱 ${escHtml(i.phone)}</a>`:''}</td>
+      <td style="font-size:0.8rem">${escHtml(i.product)}<br><small style="color:var(--gold);font-size:0.7rem">${escHtml(i.shipping||'')}</small></td>
+      <td style="font-size:0.8rem">${escHtml(i.qty||'–')}<br><small style="color:var(--gray)">${escHtml(i.packing||'')}</small></td>
+      <td style="font-size:0.8rem">${escHtml(i.country||'–')}</td>
+      <td>${i.read?`<span class="badge-read">Read</span>`:`<span class="badge-new">New</span><br><button class="td-mark-btn" onclick="markRead(${i.id})">Mark read</button>`}</td>
+    </tr>${i.message?`<tr><td colspan="7" style="font-size:0.78rem;color:var(--gray);padding:0.4rem 1rem 1rem;border-bottom:2px solid rgba(196,154,42,0.1)">💬 ${escHtml(i.message)}</td></tr>`:''}`).join('')}</tbody></table>`;
+}
+
+function renderStats(){
+  const all=getInquiries();
+  const unread=all.filter(i=>!i.read).length;
+  const today=all.filter(i=>i.timestamp.startsWith(new Date().toLocaleDateString('en-PK'))).length;
+  const products={};
+  all.forEach(i=>{if(i.product)products[i.product]=(products[i.product]||0)+1;});
+  const topProduct=Object.entries(products).sort((a,b)=>b[1]-a[1])[0];
+  document.getElementById('statsGrid').innerHTML=`
+    <div class="stat-card"><div class="stat-card-num">${all.length}</div><div class="stat-card-label">Total Inquiries</div></div>
+    <div class="stat-card"><div class="stat-card-num">${unread}</div><div class="stat-card-label">Unread / New</div></div>
+    <div class="stat-card"><div class="stat-card-num">${today}</div><div class="stat-card-label">Today's Inquiries</div></div>
+    <div class="stat-card" style="grid-column:span 3"><div class="stat-card-label" style="margin-bottom:0.5rem">Most Requested Product</div><div style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--teal-dark)">${topProduct?`${topProduct[0]} <span style="color:var(--gold);font-size:1.1rem">(${topProduct[1]} inquiries)</span>`:'No inquiries yet'}</div></div>`;
+}
+
+function escHtml(str){
+  return String(str||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+</script>
+</body>
+</html>
